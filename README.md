@@ -1,3 +1,5 @@
-# My Awesome Book
+# 如何实现链表的逆序
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+## 问题描述：
+
+>给定一个带头节点的简单链表，将其逆序。即如果链表原来为head->1->2->3->4，那么逆序就是head->4->3->2->1.
