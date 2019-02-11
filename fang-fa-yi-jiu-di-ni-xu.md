@@ -59,3 +59,7 @@ if __name__ == '__main__':
         print(cur.data, end='->' if cur.next != None else '')
         cur = cur.next
 ```
+
+## 成功截图
+
+![img](http://qnpic.top\reverse%20link%5C1.jpg)
