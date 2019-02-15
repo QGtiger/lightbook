@@ -27,3 +27,7 @@ if __name__ == '__main__':
     for i in range(len(re_lists)):
         print(re_lists[i], end=" ")
 ```
+
+## 性能分析
+
+插入排序是一种稳定的排序方法，最好的时间复杂度为O(N),最坏和平均时间复杂度为O(n^2)，空间复杂度为O(1)
