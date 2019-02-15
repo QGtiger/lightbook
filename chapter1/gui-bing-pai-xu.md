@@ -5,5 +5,39 @@
 ## 代码展示
 
 ```
+def merge(left,right):
+    i,j = 0,0
+    result = []
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            result.append(left[i])
+            i+=1
+        else:
+            result.append(right[j])
+            j+=1
+    result += left[i:]
+    result += right[j:]
+    return result
 
+def merge_sort(lists):
+    if len(lists)<=1:
+        return lists
+    num = int(len(lists)/2)
+    left = merge_sort(lists[:num])
+    right = merge_sort(lists[num:])
+    return merge(left,right)
+
+if __name__ == '__main__':
+    lists = [13,65,97,76,38,27,49]
+    print('排序前: ')
+    for i in range(len(lists)):
+        print(lists[i],end=" ")
+    print('\n排序后: ')
+    re_lists = merge_sort(lists=lists)
+    for i in range(len(re_lists)):
+        print(re_lists[i],end=" ")
 ```
+
+## 性能分析
+
+二路归并排序的过程需要logn次，每一趟归并排序的操作，就是把将两个有序子序列进行归并。而每一对有序子序列归并时，记录的比较次数小于等于数据的移动次数，每一趟归并的时间复杂度为O(N)。因此二路归并排序在最好、最坏和平均情况的时间复杂度为O(nlogn),而且是一种稳定的排序方法。空间复杂度为O(1)
