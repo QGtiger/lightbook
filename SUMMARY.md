@@ -8,4 +8,5 @@
   * [插入排序](chapter1/cha-ru-pai-xu.md)
   * [冒泡排序](chapter1/mao-pao-pai-xu.md)
   * [归并排序](chapter1/gui-bing-pai-xu.md)
+  * [快速排序](chapter1/kuai-su-pai-xu.md)
 
