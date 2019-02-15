@@ -7,4 +7,5 @@
   * [选择算法](chapter1/xuan-ze-suan-fa.md)
   * [插入排序](chapter1/cha-ru-pai-xu.md)
   * [冒泡排序](chapter1/mao-pao-pai-xu.md)
+  * [归并排序](chapter1/gui-bing-pai-xu.md)
 
